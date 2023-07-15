@@ -1,0 +1,134 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+ background-image: url('/background\ page.png');
+background-repeat: no-repeat;
+background-size: 120%;
+color: white;  
+}
+
+/*---------------Stilos del Header ------------------ */
+.header{
+  background:url('/background\ header.png');
+  height: 350px; 
+  text-align: center;                 
+}
+
+.logo{
+border: none;
+  height: 300px;
+  width: 750px;
+}
+/*------------------Stilo del la ubcacion randon---------------*/
+.location{
+  display:flex;
+
+}
+
+
+/*----------------Stilos del boton------------------- */
+button{
+  background-color: rgb(142,255,139,0.5);
+  color: #FBFBFB;
+ border: solid #8EFF8B;
+ font-size: 20px;
+ width:215px;
+ height:60px;
+ border-radius: 5px;
+}
+
+button:hover{
+  color: #000000;
+ background-color: #8EFF8B;
+ border: solid #8EFF8B;
+ 
+}
+
+/*-------------contenedor de la imagen y el status------------------- */
+.imgContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.status{
+  color: white;
+}
+
+h5{
+  padding: 5px;
+}
+
+h4{
+  position: relative;
+  top: -35px;
+  z-index:2;
+  border: solid #8fff8bcc;
+  background-color: rgba(2, 10, 2, 0.56);
+height: 25px;
+width:108px ;
+}
+
+h2{
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+img{
+  border: solid #8EFF8B;
+  border-radius: 5px;
+}
+
+/*------------------dimension de la caja ul y li */
+ul{
+
+ 
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: stretch;
+}
+
+li{
+  background-color:  #8fff8b4e;
+  border-radius: 10px;
+  border: solid #8EFF8B;
+  padding: 5px;
+  margin: 10px;
+  width: 437;
+  height: 640;
+}
+
+hr{
+  text-align: center;
+  border-color:#168196db;
+  width: 300px;
+}
+
+/*---------------Informacion------------------*/
+.inform{
+  background-color: rgba(0, 0, 0, 0.767);
+  display: flex;
+}
+
+
+
+label{
+  color:rgb(167, 165, 165);
+}
+.labels{
+
+  color:rgb(167, 165, 165);
+  padding: 5px;
+}
