@@ -93,7 +93,7 @@ button:hover{
   text-align: center;
   justify-content: center;
   align-items: center;
-
+  margin-bottom: -20px
 }
 
 .status{
@@ -130,7 +130,6 @@ img{
 /*------------------dimension de la caja ul y li */
 ul{
 
- 
   display: flex;
   flex-direction: row;
     flex-wrap: wrap;
@@ -158,6 +157,7 @@ hr{
 .inform{
   background-color: rgba(0, 0, 0, 0.767);
   display: flex;
+
 }
 
 
@@ -173,49 +173,48 @@ label{
 
 /*------Estilo de los botones como footer------*/
 .footer{
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin:20px 0;
-  border:solid #8EFF8B;
- display: flex;
- justify-content: center;
   
 }
 
-.contButton{
-  border:solid #8EFF8B;
-  width: 300px;
-  height: 60px;
-  overflow-y: hidden;
-  overflow-x: scroll;
+ .contButton{
+  display: flex;
+  justify-content: center;
+  overflow-x:hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+ }
+
+/*-----------------Responsive---------------------*/
+@media screen and (max-width: 700px) {
+
 
 }
 
-.footer .contButton{
-  list-style:none;
-	text-align: center;
+@media screen and (max-width: 600px) {
+
+
+
 }
 
-.footer .contButton .page{
-  display:inline-block;
-	margin-right:10px;
-  overflow: auto;
+@media screen and (max-width: 500px) {
+
+
+  
 }
 
-.footer .contButton .page{
-  display:block;
-	padding:10px 20px;
-	color:#fff;
-	background:#024959;
-	text-decoration: none;
+@media screen and (max-width: 400px) {
+
+  .header {
+    height: 250px
+  
 }
+location {
+  width: 200px
 
-.footer .contButton .page:hover {
-	background:#037E8C;
+
 }
-
-
-.footer .contButton .page .active {
-	background:#037E8C;
-	font-weight:bold;
 }
 

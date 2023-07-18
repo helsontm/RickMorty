@@ -119,27 +119,27 @@ const Location=()=>{
         </section>
 
         <section className="footer">
-          
+          <div className="contButton">
       <button
         onClick={() => setCurrentPage(currentPage - 1)}
         disabled={currentPage === 1}
       >
         Anterior
       </button>
-      <ul className="contButton">
+      
       {pages.map((num) => (
-        <li className="page" key={num} onClick={() => setCurrentPage(num)}><a className="active"></a>
+        <button className="page" key={num} onClick={() => setCurrentPage(num)}>
           {num}
-        </li>
+        </button>
       ))}
-         </ul>
+        
       <button
         onClick={() => setCurrentPage(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
         Siguiente
       </button>
-      
+      </div>
       </section>
 
 </>
