@@ -3,9 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 const ResidentInfo = ({ url }) => {
-  /*
-        Utilizar la prop url para hacer una peticion que me devuelva el detalle de cada pokemon
-    */
+ 
         const [ data, setData ] = useState({})
 
         useEffect(() => {

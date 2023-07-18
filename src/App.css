@@ -7,30 +7,68 @@
 body{
  background-image: url('/background\ page.png');
 background-repeat: no-repeat;
-background-size: 120%;
+background-size: 180% 180%;
 color: white;  
 }
 
 /*---------------Stilos del Header ------------------ */
 .header{
-  background:url('/background\ header.png');
-  height: 350px; 
-  text-align: center;                 
+  background: url('/logo.svg'), url('/background\ header.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 450px; 
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+    flex-direction: column;                 
 }
 
-.logo{
-border: none;
-  height: 300px;
-  width: 750px;
-}
+
 /*------------------Stilo del la ubcacion randon---------------*/
+.locationContainer{
+display: flex;
+justify-content: center;
+margin-bottom: 10px;
+}
+
 .location{
   display:flex;
+  flex-direction: column;
+  border: solid #8EFF8B;
+  width: 900px;
+  padding: 10px;
+  margin: -20px;
+  border-radius: 5px;
+  background: black;
+}
+.tablet{
+  display: flex;
+  padding: 10px;
+}
 
+/*-----------Stilo del buscador------------------*/
+.secBuscar{
+  text-align: center;
+  margin: 20px;
+}
+
+form{
+  padding: 10px;
+}
+
+input{
+  color: white;
+  background-color: #00000077;
+  border:solid #8EFF8B;
+  font-size: 20px;
+  width:415px;
+ height:50px;
+ border-radius: 5px;
+ text-align: center;
 }
 
 
-/*----------------Stilos del boton------------------- */
+/*----------------Stilos de lo botones------------------- */
 button{
   background-color: rgb(142,255,139,0.5);
   color: #FBFBFB;
@@ -102,7 +140,7 @@ ul{
 
 li{
   background-color:  #8fff8b4e;
-  border-radius: 10px;
+  border-radius: 5px;
   border: solid #8EFF8B;
   padding: 5px;
   margin: 10px;
@@ -132,3 +170,52 @@ label{
   color:rgb(167, 165, 165);
   padding: 5px;
 }
+
+/*------Estilo de los botones como footer------*/
+.footer{
+  text-align: center;
+  margin:20px 0;
+  border:solid #8EFF8B;
+ display: flex;
+ justify-content: center;
+  
+}
+
+.contButton{
+  border:solid #8EFF8B;
+  width: 300px;
+  height: 60px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+}
+
+.footer .contButton{
+  list-style:none;
+	text-align: center;
+}
+
+.footer .contButton .page{
+  display:inline-block;
+	margin-right:10px;
+  overflow: auto;
+}
+
+.footer .contButton .page{
+  display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#024959;
+	text-decoration: none;
+}
+
+.footer .contButton .page:hover {
+	background:#037E8C;
+}
+
+
+.footer .contButton .page .active {
+	background:#037E8C;
+	font-weight:bold;
+}
+

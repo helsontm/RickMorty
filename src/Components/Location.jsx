@@ -54,6 +54,7 @@ const Location=()=>{
       pages.push(i);
     }
     
+    // conteo de los residentes
     let counter=0;
     for (let clave in rickLocation.residents){
      counter=Number(clave)+1;
@@ -67,23 +68,34 @@ const Location=()=>{
 <>
 
 <section className='header'>
-      <img src='/logo.svg' className='logo'></img>
+      <div className="locationContainer">
       <div className="location">
-      <h1>Nombre: {rickLocation.name}</h1>
-      <h1>Tipo: {rickLocation.type}</h1>
-      <h1> Dimension: {rickLocation.dimension}</h1>
-      <h1>Poblacion:{counter} </h1>
+      <div className='tablet'>
+      <h2>Nombre:</h2>
+      <h2>Tipo:</h2>
+      <h2> Dimension:</h2>
+      <h2>Poblacion:</h2>
+      </div>
+      <div className='tablet'>
+      <h2>{rickLocation.name}</h2>
+      <h2>{rickLocation.type}</h2>
+      <h2>{rickLocation.dimension}</h2>
+      <h2>{counter}</h2>
+      </div>
+      </div>
       </div>
      </section >
+     <section className="secBuscar">
       <form onSubmit={(e) => submit(e)}>
         <input
           type="text"
-          placeholder="Ingresa el id del tipo"
+          placeholder="Type a location Id..."
           value={searchId}
           onChange={(e) => setSearchId(e.target.value)}
         />
         <button type="submit">Buscar 🔍</button>
       </form>
+      </section>
       {/*
               <button
               onClick={searchType}
@@ -106,26 +118,28 @@ const Location=()=>{
       </ul>
         </section>
 
-        <section>
+        <section className="footer">
+          
       <button
         onClick={() => setCurrentPage(currentPage - 1)}
         disabled={currentPage === 1}
       >
         Anterior
       </button>
-
+      <ul className="contButton">
       {pages.map((num) => (
-        <button key={num} onClick={() => setCurrentPage(num)}>
+        <li className="page" key={num} onClick={() => setCurrentPage(num)}><a className="active"></a>
           {num}
-        </button>
+        </li>
       ))}
-
+         </ul>
       <button
         onClick={() => setCurrentPage(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
         Siguiente
       </button>
+      
       </section>
 
 </>
