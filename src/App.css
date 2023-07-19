@@ -16,7 +16,7 @@ color: white;
   background: url('/logo.svg'), url('/background\ header.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 450px; 
+  height: 470px; 
   text-align: center;
   display: flex;
   justify-content: flex-end;
@@ -42,6 +42,10 @@ margin-bottom: 10px;
   background: black;
 }
 .tablet{
+  display: flex;
+  padding: 10px;
+}
+.tablet2{
   display: flex;
   padding: 10px;
 }
@@ -129,7 +133,7 @@ img{
 
 /*------------------dimension de la caja ul y li */
 ul{
-
+  list-style: none;
   display: flex;
   flex-direction: row;
     flex-wrap: wrap;
@@ -188,19 +192,170 @@ label{
  }
 
 /*-----------------Responsive---------------------*/
-@media screen and (max-width: 700px) {
 
+@media screen and (max-width: 3000px) { body{height: auto;width: auto;}
+.header {
+  height: 670px;
+}
+}
+@media screen and (max-width: 2000px) { body{height: auto;width: auto;}
+.header{
+  height: 470px; 
+}
+}
+@media screen and (max-width: 1000px) { body{height: auto;width: auto;}}
+@media screen and (max-width: 900px) {
+  .location {
+    width: 750px;
+    padding: 10px;
+    margin: 30px; 
+}
+
+.contButton{
+  width: 80%;
+}
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .location {
+    width: 750px;
+    padding: 10px;
+    margin: 30px; 
+}
+
+.contButton{
+  width: 87%;
+}
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .location {
+    width: 650px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.contButton{
+  width: 90%;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+  .location {
+    width: 550px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.contButton{
+  width: 90%;
+}
 
 }
 
 @media screen and (max-width: 600px) {
 
+  .header {
+    height: 350px
+  
+}
+.location {
+  display: flex;
+  width: 400px;
+    flex-direction: row;
+}
 
+.tablet {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: -10px;
+}
 
+.tablet2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: -10px;
+}
+h2 {
+  width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+input {
+  font-size: 12px;
+  width: 165px;
+  height: 40px;
+}
+
+button {
+  font-size: 12px;
+  width: 100px;
+  height: 45px;
+}
+
+.contButton{
+  width: 75%;
+}
 }
 
 @media screen and (max-width: 500px) {
+  .header {
+    height: 250px
+  
+}
+.location {
+  display: flex;
+  width: 300px;
+    flex-direction: row;
+    margin: -20px;
 
+}
+
+.tablet {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: -10px;
+}
+
+.tablet2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: -10px;
+}
+h2 {
+  width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+input {
+  font-size: 12px;
+  width: 115px;
+  height: 40px;
+}
+
+button {
+  font-size: 12px;
+  width: 100px;
+  height: 45px;
+}
+
+.contButton{
+  width: 75%;
+}
 
   
 }
@@ -211,10 +366,47 @@ label{
     height: 250px
   
 }
-location {
-  width: 200px
-
-
+.location {
+  display: flex;
+  width: 300px;
+    flex-direction: row;
 }
+
+.tablet {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: -10px;
+}
+
+.tablet2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: -10px;
+}
+h2 {
+  width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+input {
+  font-size: 12px;
+  width: 115px;
+  height: 40px;
+}
+
+button {
+  font-size: 12px;
+  width: 100px;
+  height: 45px;
+}
+
+.contButton{
+  width: 85%;
+}
+
 }
 

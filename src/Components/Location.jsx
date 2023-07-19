@@ -76,7 +76,7 @@ const Location=()=>{
       <h2> Dimension:</h2>
       <h2>Poblacion:</h2>
       </div>
-      <div className='tablet'>
+      <div className='tablet2'>
       <h2>{rickLocation.name}</h2>
       <h2>{rickLocation.type}</h2>
       <h2>{rickLocation.dimension}</h2>
